@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Affiliate Future</title>
-    <!-- Bootstrap CSS -->
+    <title>Profil SAF</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #FFFACD, #ffD700, #ffff00, #ffd700, #FFFACD); /* Gradiasi biru dongker ke terang */
+            background: linear-gradient(to bottom, #FFFACD, #FFFF00);
             margin: 0;
             color: #333;
-            overflow-x: hidden;
         }
 
         header {
@@ -37,10 +33,10 @@
             justify-content: center;
             gap: 10px;
             background: linear-gradient(to bottom, #Ff1493, #FF69b4); /* Gradiasi biru dongker ke terang */
-            padding: 1.5px;
+            padding: 2px;
             border: 0px solid #Ff1493, #FF69b4;
             position: sticky;
-            top: 60px;
+            top: 61px;
             z-index: 700;
         }
 
@@ -59,115 +55,69 @@
 
         nav a:hover {
             background: linear-gradient(to bottom, #0000ff, #0000ff); /* Gradiasi biru dongker ke terang */
-            color: #FFFFFF;
+            color: #000000;
         }
 
-        .welcome-animation {
-            text-align: left;
-            font-size: 1.7em;
-            font-family: 'Rubik', sans-serif;
-            color: #8B0000;
-            text-shadow: 2px 2px 4px #fff;
-            margin: 12px 0;
-            overflow: hidden;
-            white-space: nowrap;
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
+            color: #fffff0;
+            text-shadow: 2px 2px 5px #ffffff;
         }
 
-        .welcome-animation span {
-            display: inline-block;
-            animation: scroll-text 7s linear infinite;
-        }
-
-        @keyframes scroll-text {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-
-        .logo-small {
-            display: block;
-            max-width: 35%;
-            margin: 10px auto;
-        }
-
-        .logo-large {
-            display: block;
-            max-width: 94%;
-            margin: 1px auto;
+        .hero h1 {
+            font-size: 2.2em;
         }
 
         .content {
             max-width: 90%;
-            margin: 30px auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: #F0E68C;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            font-weight: bold;
-            color: #333;
-            line-height: 1.8;
-            text-align: justify;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        h3 {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #000;
-            text-align: left;
+        .content h3 {
+            color: #FF4500;
+            text-align: center;
         }
 
-    p {
-        text-align: left;
-    }
-
-        ul {
-            padding-left: 1px;
-        }
-
-        ul li {
-            list-style-type: none;
-            margin: 5px 0;
-        }
-
-        ul li::before {
-            content: "● ";
-            color: #Ffa500;
-            margin-right: 1px;
-            font-size: 1.2em;
-        }
-
-        ul li ul li::before {
-            content: "○ ";
-            margin-left: 10px;
+        .team img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
         }
 
         .cta-button,
         .login-button {
             position: fixed;
-            bottom: 20px;
-            padding: 10px 20px;
+            bottom: 10px;
+            padding: 7px 12px;
             color: #000;
             background-color: #FFA500;
             text-align: center;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 10px;
             font-weight: bold;
             z-index: 1000;
             animation: color-change 3s infinite, pulse 1.5s infinite;
         }
 
         .cta-button {
-            right: 20px;
+            right: 14px;
         }
 
         .login-button {
-            left: 20px;
+            left: 14px;
         }
 
         @keyframes color-change {
-            0% { background-color: #00FFFF; }
-            33% { background-color: #FFA500; }
-            66% { background-color: #7FFF00; }
-            100% { background-color: #9400D3; }
+            20% { background-color: #00FFFF; }
+            20% { background-color: #FFA500; }
+            60% { background-color: #7FFF00; }
+            100% { background-color: #Ff1493; }
         }
 
         @keyframes pulse {
@@ -179,19 +129,12 @@
                 transform: scale(1.1);
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
             }
-            }
+        }
     </style>
-
-        <style>
-    body, p, h1, h2, h3, h4, h5, h6, div, span, ul, li {
-        text-align: left;
-    }
-</style>
-    
 </head>
 <body>
     <header>
-        Smart Affiliate Future
+        LEGALITAS
     </header>
     <nav>
         <a href="https://contoh.com">Home</a>
@@ -200,201 +143,64 @@
         <a href="https://contoh.com">Legalitas</a>
         <a href="https://contoh.com">Komisi</a>
     </nav>
-    <div class="welcome-animation">
-        <span><b>Selamat Datang di Smart Affiliate Future - Solusi Bisnis Masa Depan untuk Semua Kalangan</b></span>
-    </div>
+
     <img class="logo-small" src="https://affiliate035.wordpress.com/wp-content/uploads/2025/01/20250113_192723.png?w=768" alt="Logo Smart Affiliate Future">
-    <img class="logo-large" src="https://affiliate035.wordpress.com/wp-content/uploads/2025/01/20250124_235629.png?w=1024" alt="Platform SAF">
+
+    <div class="hero">
+        <h1><b>Legalitas Smart Affiliate Future</b></h1>
+        <h4><b>Beroperasi Secara Resmi, Melayani dengan Integritas</b></h4>
+    </div>
 
     <div class="content">
-        <h3>SAF (Smart Affiliate Future)</h3>
+        <h3></h3>
         <p>
-            <b>SAF</b> adalah Platform modern berbasis <b>Affiliate Network Marketing</b> yang memberikan peluang bisnis kepada siapa saja untuk mendapatkan penghasilan tambahan dengan mudah, transparan, dan sesuai dengan prinsip syariah.</p>
-<p>SAF menghubungkan berbagai produk digital, fisik, dan jasa berkualitas melalui sistem komisi yang adil, inovatif, dan dirancang untuk mendukung siapa saja—baik yang mencari pekerjaan utama maupun penghasilan sampingan. Dengan memanfaatkan teknologi dan internet, SAF menjadi solusi bisnis yang dapat diakses oleh semua kalangan.</p>
-<p>Platform ini juga dirancang untuk mendukung wirausaha di Indonesia agar dapat meraih kesuksesan dengan modal minim hingga gratis, teknologi yang mudah digunakan, dan sistem yang telah teruji. Dengan SAF, siapapun—baik pelajar, ibu rumah tangga, karyawan, hingga pensiunan—bisa mendapatkan penghasilan tambahan tanpa perlu pengalaman bisnis sebelumnya.</p>
+            <b>Smart Affiliate Future (SAF)</b> adalah entitas bisnis yang beroperasi secara resmi di bawah hukum Republik Indonesia. Kami berkomitmen untuk memberikan layanan terbaik kepada pelanggan kami dengan mematuhi semua peraturan yang berlaku.
         </p>
     </div>
 
     <div class="content">
-    <h3>Apa Itu Sistem Affiliate Network Marketing?</h3>
-    <p>
-        <b>Sistem Affiliate Network Marketing</b> adalah model bisnis yang memberikan komisi berdasarkan penjualan produk nyata melalui jaringan yang Anda bangun. Dalam SAF:
-    </p>
-        <ul>
-        <li>Anda mempromosikan produk menggunakan link referral unik Anda.</li>
-        <li>Jika ada pembelian melalui link tersebut, Anda mendapatkan komisi langsung.</li>
-        <li>Anda juga bisa mendapatkan komisi tambahan dari penjualan jaringan Anda hingga <b>10 Generasi/level</b> dan <b>Repeat Order</b>.</li>
-        <li>Semakin banyak jaringan aktif yang Anda bangun, semakin besar potensi penghasilan Anda.</li>
-        </ul>
+        <h3>Informasi Legalitas</h3>
+        <p>
+        Untuk meningkatkan transparansi dan kepercayaan, berikut adalah informasi legal dan dokumen resmi yang menjadi dasar operasional perusahaan kami:
+        </p>
     </div>
 
-<div class="content">
-    <h3>Passive Income di SAF</h3>
-        <ul>
-        <li><b>Passive income</b> adalah penghasilan yang terus Anda dapatkan secara berkelanjutan tanpa harus terus bekerja aktif setiap waktu.</li>  
-        <li>Di SAF, Anda mendapatkan <b>passive income</b> dari komisi jaringan yang aktif hingga <b>10 Generasi/level</b> dan <b>Repeat Order</b>. Ini memungkinkan Anda menghasilkan penghasilan bahkan ketika Anda sedang tidak bekerja atau fokus pada hal lain.</li>
-        </ul>
-</div>
-
-<div class="content">
-    <h3>Apa yang Membuat SAF Berbeda?</h3>
-    <p>
-        <b>Bukan MLM, Money Game, Investasi Bodong, atau Sistem Piramida</b>
-    </p>
-    <ul>
-        <li><b>Bukan MLM:</b> Tidak mengandalkan perekrutan anggota, tetapi fokus pada penjualan produk nyata.</li>
-        <li><b>Bukan Money Game:</b> Keuntungan hanya berasal dari penjualan produk, bukan dari skema putaran uang.</li>
-        <li><b>Bukan Investasi:</b> Tidak ada janji keuntungan tetap tanpa usaha. Pendapatan di SAF murni hasil dari kerja keras dan penjualan.</li>
-        <li><b>Bukan Sistem Piramida:</b> Komisi diberikan secara adil kepada semua anggota berdasarkan usaha penjualan, bukan posisi dalam jaringan.</li>
-    </ul>
-    <p>
-        <b>Sistem yang Transparan dan Berkeadilan</b>
-    </p>
-    <ul>
-        <li>Komisi hingga 10 Generasi hanya diberikan berdasarkan penjualan produk.</li>
-        <li>Semua anggota memiliki peluang yang sama untuk sukses, terlepas dari kapan mereka bergabung.</li>
-        <li>Komisi berlaku juga untuk <b>Repeat Order</b>, sehingga anggota terus mendapatkan penghasilan dari pelanggan loyal.</li>
-        <li>Tidak ada biaya pendaftaran (Gratis), atau tidak ada biaya iyuran apapun dan tidak ada kewajiban atau syarat apapun, komisi dan bonus diberikan hanya sebagai hadiah dan apresiasi atas usaha dan prestasi Anda.</li)
-        <li>Bisa diwariskan kepada keluarga Anda</li>
-    </ul>
-    <p>
-        <b>Kemudahan dalam Memulai</b>
-    </p>
-    <ul>
-        <li><b>Harga Produk Terjangkau:</b> Kompetitif untuk semua kalangan.</li>
-        <li><b>Pendaftaran Gratis:</b> Anggota Basic dapat memulai tanpa modal dan tetap mendapatkan akses materi promosi, Web/Landing Page Profesional gratis.</li>
-        <li>Dapatkan landing page/Web Profesional untuk promosi seperti yang sedang baca.</li>
-        <li><b>Landing Page Profesional/Web:</b> SAF menyediakan jasa pembuatan landing page atau Web khusus untuk membantu mempromosikan produk Pribadi anggota.</li>
-    </ul>
-    <p>
-        <b>Potensi Penghasilan Besar</b>
-    </p>
-    <ul>
-        <li><b>Komisi Langsung:</b> Dapatkan komisi langsung dari setiap penjualan produk dan Repeat order Atau di sebut juga komisi Generasi/level 1, komisi ini untuk Anggota Basic dan juga Anggota premium.</li>
-        <li><b>Komisi Jaringan hingga 10 Generasi/Level:</b> Potensi pendapatan dari jaringan yang aktif hingga Generasi ke-10, termasuk dari <b>Repeat Order, komisi ini khusus anggota premium.</b></li>
-        <li><b>Bonus:</b>
-            <ul>
-                <li><b>Bonus Spesial</b></li>
-                <li><b>Bonus Tambahan</b></li>
-            </ul>
-        </li>
-    </ul>
-    <p>
+    <div>
+    <img class="logo-large" src="https://affiliate035.wordpress.com/wp-content/uploads/2025/01/screenshot_2025-01-25_005813.jpg" alt="Ilustrasi Sistem SAF">
+    <img class="logo-large" src="https://affiliate035.wordpress.com/wp-content/uploads/2025/01/screenshot_2025-01-25_010102.jpg" alt="Ilustrasi Sistem SAF">
+    <img class="logo-large" src="https://affiliate035.wordpress.com/wp-content/uploads/2025/01/screenshot_2025-01-25_010111-1.jpg" alt="Ilustrasi Sistem SAF">
+    <img class="logo-large" src="https://affiliate035.wordpress.com/wp-content/uploads/2025/01/screenshot_2025-01-25_010206-1.jpg" alt="Ilustrasi Sistem SAF">
+    <img class="logo-large" src="https://affiliate035.wordpress.com/wp-content/uploads/2025/01/screenshot_2025-01-25_011133-1.jpg" alt="Ilustrasi Sistem SAF">
     </div>
-       
-        <div class="content">
-        <h3>Keunggulan SAF</h3>
-    </p>
-    <ul>
-        <li><b>Berbasis Syariah:</b> Berbasis penjualan produk nyata, bebas riba, gharar (penipuam), dan maysir (judi), tidak ada unsur pemaksaan semua dilakukan atas dasar suka rela. Jelas Akadnya yaitu jual beli dan Mengutamakan manfaat produk untuk konsumen serta komisi dan bonus diberikan karena hasil kerja.</li>
-        <li><b>Fleksibel dan Mudah Dijalankan:</b> Cocok untuk pelajar, ibu rumah tangga, karyawan, hingga pensiunan. Tidak membutuhkan keahlian khusus; cukup dengan smartphone dan koneksi internet. Dukungan materi promosi dan strategi marketing gratis.</li>
-    </ul>
-    <p>
-        <b>Peluang untuk Anggota Premium</b>
-    </p>
-    <ul>
-        <li>Dapat memasarkan produk atau jasa pribadi melalui platform SAF dengan sistem yang sama Affiliasi Network Marketing.</li>
-        <li><b>Komisi Jaringan hingga 10 Generasi/Level:</b> Potensi pendapatan dari jaringan yang aktif hingga Generasi ke-10, termasuk dari <b>Repeat Order, komisi ini khusus anggota premium.</b></li>
-        <li><b>Bonus:</b>
-            <ul>
-                <li><b>Bonus Spesial</b></li>
-                <li><b>Bonus Tambahan</b></li>
-            </ul>
-        <li>Anggota Basic (Gratis) memiliki peluang yang sama Anda bisa mengupgrade menjadi anggota Premium kapan saja dengan membeli produk apapun, Rekomendasi kami membeli Ebook Rp 35 Ribu (produk paling murah), anda bisa membeli produk dari hasil komisi langsung penjualan Anda.</li>
-    </ul>
-    <p>
+
+    <div class="content">
+        <h3>Komitmen Kepatuhan Hukum</h3>
+        <p>Kami memastikan bahwa seluruh kegiatan usaha yang dilakukan oleh SAF.</p>
+        <li>Sesuai dengan peraturan perundang-undangan yang berlaku di Indonesia.</li>
+        <li>Mematuhi standar etika bisnis, baik dalam pelayanan pelanggan maupun hubungan kemitraan.</li>
+    </div>
+
+    <div class="content">
+        <h3>Penggunaan Data</h3>
+        <p>
+        Kami juga menjaga privasi dan keamanan data pelanggan sesuai dengan kebijakan perlindungan data yang telah kami tetapkan.
+        </p>
+    </div>
+
+    <div class="content">
+        <h3>Alamat dan Kontak</h3>
+        <ul>
+            <li>Alamat Kantor: Kota Bogor, Jl Cifor Rt 003/008 Kel. Bubulak Bogor Barat, 16115.</li>
+            <li>Email: smartaffiliatee@gmail.com</li>
+        </ul>
+    </div>
+            </div>
         </div>
-
-        <div class="content">
-        <h3>Kenapa SAF Cocok untuk Anda?</h3>
-    </p>
-    <ul>
-        <li><b>Fleksibilitas:</b> Bisa dijalankan kapan saja dan di mana saja.</li>
-        <li><b>Tanpa Risiko:</b> Tidak ada kewajiban membeli produk atau membayar biaya keanggotaan atau pendaftaran.</li>
-        <li><b>Dukungan Maksimal:</b> Materi promosi, Full support dan panduan bisnis tersedia untuk membantu Anda sukses.</li>
-        <li><b>Komunitas Wirausaha:</b> Bergabunglah dengan komunitas yang mendukung dan inspiratif.</li>
-        <li><b>Passive Income:</b> Pendapatan dari jaringan dan <b>Repeat Order</b>, menciptakan penghasilan berkelanjutan tanpa batasan waktu.</li>
-        <li><b>Tanpa Syarat:</b> Siapapun bisa bergabung tanpa syarat apapun tidak perlu KTP, tanpa ada batasan usia, tanpa perlu memiliki follower disosmed, tidak memiliki rekening bank pun bisa bergabung.</li>
-    </ul>
-    <p>
     </div>
 
-
-    <div class="content">
-    <h3>Jenis Keanggotaan di SAF</h3>
-    <p>
-        Di SAF (Smart Affiliate Future), terdapat dua jenis anggota, yaitu <b>Anggota Basic</b> dan <b>Anggota Premium</b>.
-    </p>
-
-    <h4>1. Anggota Basic</h4>
-    <p>
-        <b>Anggota Basic</b> adalah anggota yang dapat bergabung di SAF secara <b>gratis</b> tanpa perlu melakukan pembelian produk.
-    </p>
-    <p><b>Kelebihan Anggota Basic:</b></p>
-    <ul>
-        <li><b>Pendaftaran Gratis:</b> Tidak ada biaya awal untuk bergabung bisa Upgrade menjadi anggota premium kapan saja dengan cara membeli produk.</li>
-        <li><b>Akses Materi Promosi:</b> Mendapatkan akses ke materi promosi seperti gambar, video, atau informasi produk untuk membantu pemasaran.</li>
-        <li><b>Web/Landing Page Profesional Gratis:</b> Dapat menggunakan landing page khusus anggota Basic yang disediakan SAF untuk promosi produk.</li>
-        <li><b>Komisi Langsung:</b> Tetap mendapatkan komisi dari penjualan produk melalui link referral dan juga Repeat order.</li>
-        <li><b>Fleksibilitas Waktu:</b> Cocok bagi pemula yang ingin mencoba tanpa risiko.</li>
-    </ul>
-    <p>
-        Namun, <b>Anggota Basic</b> tidak mendapatkan keuntungan tambahan seperti komisi jaringan atau peluang menjual produk pribadi.
-    </p>
-
-    <h4>2. Anggota Premium</h4>
-    <p>
-        <b>Anggota Premium</b> adalah mereka yang telah dengan suka rela membeli produk SAF apa saja akan mendapatkan akses penuh ke semua fitur yang disediakan oleh SAF, Anggota Basic tidak wajib membeli produk atau tidak wajib menjadi anggota Premium ini hanya bagi yang mau saja atas dasar suka rela.
-    </p>
-    <p><b>Keuntungan yang akan di dapat Anggota Premium:</b></p>
-    <ul>
-        <li><b>Komisi Jaringan:</b> akan mendapatkan komisi hingga <b>10 Generasi/level</b> dari jaringan aktif yang mereka bangun.</li>
-        <li><b>Komisi dari Repeat Order:</b> Passive income dari pesanan ulang pelanggan setia.</li>
-        <li><b>Akses Penjualan Produk/Jasa Pribadi:</b> Bisa menjual produk atau jasa mereka sendiri melalui sistem SAF dengan model Affiliate Network Marketing.</li>
-        <li><b>Gratis Landing Page /Web Eksklusif:</b> SAF menyediakan landing page profesional untuk anggota Premium seperti yang sedang anda baca.</li>
-        <li><b>Bonus Tambahan:</b> akan mendapatkan berbagai bonus seperti Bonus Spesial, Bonus Tambahan, dan Bonus Cuma-cuma.</li>
-        <li><b>Dukungan Eksklusif:</b> Mendapatkan pelatihan, panduan bisnis, dan konsultasi untuk membantu kesuksesan bisnis mereka.</li>
-        <li><b>Peluang Passive Income:</b> Mendapatkan penghasilan berkelanjutan dari jaringan aktif dan repeat order, bahkan saat tidak bekerja aktif.</li>
-    </ul>
-
-    <p>
-        Dengan sistem yang dirancang untuk mendukung setiap anggotanya, baik <b>Anggota Basic</b> maupun <b>Anggota Premium</b> memiliki peluang untuk sukses di SAF sesuai dengan kebutuhan dan tujuan mereka.
-    </p>
-</div>
-
-    <div class="content">
-    <h3>Mengapa SAF Mudah Dijalankan?</h3>
-    <ul>
-    <li><b>Hanya Perlu Share Link Referral:</b> Dengan membagikan link referral Anda, produk SAF bisa dipromosikan secara mudah dan online.</li>
-    <li><b>Tanpa Modal Besar:</b> Anggota basic bisa memulai tanpa biaya dan mendapatkan penghasilan dari penjualan langsung.</li>
-    <li><b>Pilihan Produk yang Luas:</b> Dengan produk digital, fisik, dan jasa yang beragam, Anda memiliki banyak pilihan untuk dipromosikan.</li>
-    <li><b>Sistem Online 100%:</b> Semua proses dilakukan online, mulai dari pendaftaran, promosi, hingga pembayaran komisi.</li>
-    </ul>
+    <div>
+    <a class="cta-button" href="https://contoh.com"><b>Daftar Sekarang</b></a>
+    <a class="login-button" href="https://contoh.com">Login</a>
     </div>
-
-<div class="content">
-    <p><b>"Di SAF, sistem yang kami terapkan berlandaskan pada prinsip syariah, sehingga tujuan utama kami bukan hanya mencari keuntungan materi, tetapi juga berikhtiar untuk membantu sesama mendapatkan penghasilan yang halal serta meraih ridho Allah SWT. Dengan berikhtiar di SAF, Anda tidak hanya memperoleh penghasilan, tetapi juga menjalankan perintah-Nya dan mendekatkan diri kepada keberkahan."</b></p>
-</div>
-    
-        <div class="content">
-        <h3>Kesimpulan</h3>
-    <p>
-        <b>Smart Affiliate Future</b> adalah platform bisnis berbasis syariah yang menawarkan peluang penghasilan tambahan melalui penjualan produk digital, fisik, dan jasa. Dengan sistem <b>Affiliate Network Marketing</b> yang adil, transparan, dan mudah digunakan, SAF memberikan kemudahan, potensi penghasilan besar, dan dukungan penuh untuk membantu Anda sukses.
-    </p>
-    <p>
-        SAF adalah pilihan tepat bagi Anda yang ingin memulai bisnis tanpa risiko besar, mudah dijalankan dan sesuai syariah.
-    </p>
-    <p>
-        <b>Siapapun bisa sukses di SAF</b>, bahkan tanpa pengalaman bisnis sebelumnya.
-    </p>
-    <p>
-        <b>Gabung sekarang dan jadilah bagian dari perubahan bersama SAF!</b>
-    </p>
-</div>
-
-    <img class="logo-large" src="https://affiliate035.wordpress.com/wp-content/uploads/2024/12/20241120_173812.png?w=1024" alt="Ilustrasi Sistem SAF">
-
-    <a class="cta-button" href="https://contoh.com">DAFTAR SEKARANG</a>
-    <a class="login-button" href="https://contoh.com">LOGIN</a>
 </body>
 </html>
